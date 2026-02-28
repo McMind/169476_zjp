@@ -1,8 +1,10 @@
 
 def total_surface_area(a):
+    """Funkcja do obliczania pola sześcianu"""
     return 6 * pow(a,2)
 
 def volume(a):
+    """Funkcja do obliczania objętości sześcianu"""
     return pow(a,3)
 
 if __name__ == '__main__':
