@@ -3,7 +3,7 @@ from math import sqrt, degrees, acos
 
 class Vector2D:
 
-    def __init__(self, x: int | float, y: int | float):
+    def __init__(self, x: int | float, y: int | float) -> None:
         self.x = x
         self.y = y
 
@@ -43,6 +43,9 @@ class Vector2D:
 
     def __str__(self) -> str:
         return f"({self.x}, {self.y})"
+
+    def __repr__(self) -> str:
+        return f"Vector2D({self.x}, {self.y})"
 
     def normalize(self) -> Vector2D:
         """Zwraca wektor znormalizowany"""
