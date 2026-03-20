@@ -15,8 +15,8 @@ class SimpleTable:
     @property
     def shape(self) -> tuple:
         """Zwraca wymiary tablicy."""
-        rows = len(self._data)
-        cols = len(self._data[0]) if rows > 0 else 0
+        rows = len(self.data)
+        cols = len(self.data[0]) if rows > 0 else 0
         return rows, cols
 
     @property
@@ -30,13 +30,13 @@ class SimpleTable:
 
     def add_row(self, row: list[Any]) -> None:
         """Dodaje wiersz na koniec."""
-        self.insert_row(len(self._data), row)
+        self.insert_row(len(self.data), row)
 
     def insert_row(self, index: int, row: list[Any]) -> None:
         """Wstawia wiersz pod wskazany indeks."""
-        if self._data and len(row) != self.shape[1]:
+        if self.data and len(row) != self.shape[1]:
             raise ValueError(f"Incorrect row length. Expected: {self.shape[1]}")
-        self._data.insert(index, list(row))
+        self.data.insert(index, list(row))
 
     def add_column(self, col: list[Any]) -> None:
         """Dodaje kolumnę na koniec."""
@@ -54,27 +54,24 @@ class SimpleTable:
             raise ValueError(f"Incorrect column length. Expected: {rows_count}")
 
         for i in range(rows_count):
-            self._data[i].insert(index, col[i])
+            self.data[i].insert(index, col[i])
 
     def __repr__(self):
-        return f"SimpleTable(data={self._data})"
+        return f"SimpleTable(data={self.data})"
 
     def __str__(self):
-        result = ""
-        for _data in self._data:
-            result += str(_data) + "\n"
-        return result
+        return "\n".join(str(row) for row in self.data)
 
 
 if __name__ == "__main__":
-    table = SimpleTable([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-    print(table)
-    table.add_row([10, 11, 12])
-    print(table)
-    table.add_column([13, 14, 15, 16])
-    print(table)
-    table.insert_row(1, [17, 18, 19, 21])
-    print(table)
-    print(f"Przed usunięciem: {table.shape}")
-    table.__delattr__("data")
-    print(f"Po usunięciu: {table.shape}")
+    obj1 = SimpleTable([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    print(obj1)
+    obj1.add_row([10, 11, 12])
+    print(obj1)
+    obj1.add_column([13, 14, 15, 16])
+    print(obj1)
+    obj1.insert_row(1, [17, 18, 19, 21])
+    print(obj1)
+    print(f"Przed usunięciem: {obj1.shape}")
+    del obj1.data
+    print(f"Po usunięciu: {obj1.shape}")

@@ -54,4 +54,4 @@ if __name__ == '__main__':
     print(alg1(2, 996))
     print(alg2(2, 996))
     print(alg3(2, 996))
-    help(alg1(2,996))
+    # help(alg1(2,996))
