@@ -1,0 +1,41 @@
+timestamp,level,module,message
+2026-04-26 08:00:01,INFO,auth,Uruchomiono usługę logowania
+2026-04-26 08:01:14,INFO,auth,Użytkownik anna zalogował się poprawnie
+2026-04-26 08:02:03,WARNING,database,Wolna odpowiedź zapytania SELECT
+2026-04-26 08:03:21,ERROR,database,Nie udało się połączyć z bazą danych
+2026-04-26 08:04:10,INFO,api,Odebrano żądanie GET /students
+2026-04-26 08:05:44,ERROR,api,Kod odpowiedzi 500 dla endpointu /grades
+2026-04-26 08:06:05,INFO,scheduler,Rozpoczęto zadanie cykliczne backup
+2026-04-26 08:07:18,WARNING,scheduler,Zadanie backup trwa dłużej niż oczekiwano
+2026-04-26 08:08:49,ERROR,filesystem,Brak dostępu do pliku config.yaml
+2026-04-26 08:09:33,INFO,auth,Użytkownik jan wylogował się
+2026-04-26 08:10:12,INFO,api,Odebrano żądanie POST /login
+2026-04-26 08:11:27,ERROR,auth,Niepoprawny token sesji użytkownika
+2026-04-26 08:12:30,DEBUG,cache,Odświeżono pamięć podręczną
+2026-04-26 08:13:42,INFO,database,Zapisano nowe dane studenta
+2026-04-26 08:14:55,ERROR,parser,Nieprawidłowy format pliku wejściowego
+2026-04-26 08:15:05,WARNING,api,Przekroczono limit zapytań dla adresu IP
+2026-04-26 08:16:19,INFO,mail,Wysłano wiadomość powitalną
+2026-04-26 08:17:26,ERROR,mail,Nie udało się wysłać wiadomości email
+2026-04-26 08:18:41,INFO,filesystem,Utworzono katalog exports
+2026-04-26 08:19:53,DEBUG,api,Parametry zapytania zostały zweryfikowane
+2026-04-26 08:20:11,ERROR,api,Brak wymaganego pola name w danych JSON
+2026-04-26 08:21:07,INFO,auth,Zmieniono hasło użytkownika ola
+2026-04-26 08:22:36,WARNING,database,Liczba połączeń zbliża się do limitu
+2026-04-26 08:23:50,ERROR,database,Przekroczono maksymalną liczbę połączeń
+2026-04-26 08:24:09,INFO,scheduler,Zakończono zadanie backup
+2026-04-26 08:25:13,INFO,api,Odebrano żądanie GET /courses
+2026-04-26 08:26:44,ERROR,security,Wykryto próbę dostępu bez uprawnień
+2026-04-26 08:27:32,DEBUG,cache,Usunięto przestarzały wpis cache
+2026-04-26 08:28:19,WARNING,filesystem,Mało miejsca na dysku
+2026-04-26 08:29:47,ERROR,filesystem,Nie udało się zapisać pliku raport.csv
+2026-04-26 08:30:02,INFO,api,Odebrano żądanie DELETE /students/12
+2026-04-26 08:31:18,ERROR,api,Operacja DELETE zakończona błędem walidacji
+2026-04-26 08:32:24,INFO,monitoring,Status aplikacji OK
+2026-04-26 08:33:39,DEBUG,auth,Sprawdzono uprawnienia użytkownika
+2026-04-26 08:34:57,ERROR,monitoring,Usługa notifications nie odpowiada
+2026-04-26 08:35:21,INFO,mail,Kolejka wiadomości została opróżniona
+2026-04-26 08:36:33,WARNING,api,Żądanie trwało ponad 2 sekundy
+2026-04-26 08:37:11,ERROR,parser,Nie można odczytać wartości liczbowej
+2026-04-26 08:38:48,INFO,database,Połączenie z bazą danych przywrócone
+2026-04-26 08:39:59,INFO,system,Zakończono przetwarzanie logów
