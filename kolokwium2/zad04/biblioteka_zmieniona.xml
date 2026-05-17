@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<biblioteka>
+    <ksiazka id="1">
+        <tytul>Python od podstaw</tytul>
+        <autor>Jan Kowalski</autor>
+        <rok>2026</rok>
+        <kategoria>programowanie</kategoria>
+    </ksiazka>
+    <ksiazka id="2">
+        <tytul>Algorytmy w praktyce</tytul>
+        <autor>Anna Nowak</autor>
+        <rok>2023</rok>
+        <kategoria>informatyka</kategoria>
+    </ksiazka>
+    <ksiazka id="3">
+        <tytul>Wprowadzenie do baz danych</tytul>
+        <autor>Piotr Zieliński</autor>
+        <rok>2020</rok>
+        <kategoria>informatyka</kategoria>
+    </ksiazka>
+<ksiazka id="4"><tytul>Harry Potter</tytul><autor>J. K. Rowling</autor><rok>2005</rok><kategoria>fantastyka</kategoria></ksiazka></biblioteka>

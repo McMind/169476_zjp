@@ -1,0 +1,20 @@
+<biblioteka>
+    <ksiazka id="1">
+        <tytul>Python od podstaw</tytul>
+        <autor>Jan Kowalski</autor>
+        <rok>2021</rok>
+        <kategoria>programowanie</kategoria>
+    </ksiazka>
+    <ksiazka id="2">
+        <tytul>Algorytmy w praktyce</tytul>
+        <autor>Anna Nowak</autor>
+        <rok>2023</rok>
+        <kategoria>informatyka</kategoria>
+    </ksiazka>
+    <ksiazka id="3">
+        <tytul>Wprowadzenie do baz danych</tytul>
+        <autor>Piotr Zieliński</autor>
+        <rok>2020</rok>
+        <kategoria>informatyka</kategoria>
+    </ksiazka>
+</biblioteka>

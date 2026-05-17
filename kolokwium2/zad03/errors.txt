@@ -1,0 +1,3 @@
+2026-05-17 10:16:22 -> Cannot connect to database
+2026-05-17 10:19:10 -> Invalid password for user jan
+2026-05-18 08:01:11 -> Timeout while reading file
