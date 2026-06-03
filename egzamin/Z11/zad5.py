@@ -21,6 +21,7 @@ def divisors(n: int):
     for d in all_divisors:
         yield d
 
+
 print("2. Dzielniki liczby 36:")
 for div in divisors(36):
     print(div, end=" ")

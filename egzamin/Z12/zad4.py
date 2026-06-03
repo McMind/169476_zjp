@@ -24,7 +24,7 @@ class ComplexNumber:
         return f"ComplexNumber({self.real}, {self.imag})"
 
 
-z = ComplexNumber(3,4)
+z = ComplexNumber(3, 4)
 print(z)
 print(z * 2)
 print(.5 * z)

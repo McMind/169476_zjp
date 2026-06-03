@@ -6,7 +6,7 @@ data = [-5, -2, 0, 3, 7, 10, 15, 22]
 
 print(f"Lista startowa: {data}\n")
 
-result_1 = process_numbers(data, lambda x: x > 0, lambda x: x**2)
+result_1 = process_numbers(data, lambda x: x > 0, lambda x: x ** 2)
 print(f"1. Kwadraty liczb dodatnich: {result_1}")
 
 result_2 = process_numbers(data, lambda x: x < 0, lambda x: abs(x) + 100)

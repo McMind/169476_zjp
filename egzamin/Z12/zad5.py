@@ -4,6 +4,7 @@ def multiples_up_to(n, limit):
         yield n * i
         i += 1
 
+
 result1 = list(multiples_up_to(7, 100))
 print(result1)
 

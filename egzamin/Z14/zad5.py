@@ -6,4 +6,5 @@ def fibonacci_up_to_n(n):
     for element in list1:
         yield element
 
+
 print(list(fibonacci_up_to_n(100)))

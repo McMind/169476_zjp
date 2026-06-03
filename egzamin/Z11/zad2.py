@@ -29,8 +29,8 @@ class Student:
 
 
 s1 = Student("Jan Kowalski", [4, 5, 4, 3])
-s2 = Student("Anna Nowak", [5, 5, 5, 4])
-s3 = Student("Piotr Wiśniewski", [3, 4, 4, 5])
+s2 = Student("Anna Nowak", [5, 5, 5, 5])
+s3 = Student("Piotr Wiśniewski", [3, 4, 2, 5])
 
 students_list = [s1, s2, s3]
 

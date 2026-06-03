@@ -23,7 +23,6 @@ class Vector2D:
         return f"Vector2D({self.x}, {self.y})"
 
 
-
 v = Vector2D(3, 4)
 print(f"Wektor bazowy: {v}\n")
 

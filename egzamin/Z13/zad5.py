@@ -8,6 +8,7 @@ def digits(n):
     for element in list1:
         yield element
 
+
 print(list(digits(78652)))
 
 result2 = list(digits(12345))

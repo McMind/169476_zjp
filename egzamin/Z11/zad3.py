@@ -44,7 +44,6 @@ class Product:
         return f"Produkt: {self.name} | Cena końcowa: {self.final_price:.2f} zł (Rabat: {self.discount}%)"
 
 
-
 print("=== Test 1: Poprawne działanie ===")
 prod = Product("Laptop", 3500.00, 10)
 print(prod)

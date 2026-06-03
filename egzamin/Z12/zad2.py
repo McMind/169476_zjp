@@ -3,7 +3,7 @@ from functools import total_ordering
 
 @total_ordering
 class Book:
-    def __init__(self, title: str, ratings: list[float|int]):
+    def __init__(self, title: str, ratings: list[float | int]):
         self.title = title
         self.ratings = ratings
 
@@ -25,6 +25,7 @@ class Book:
 
     def __repr__(self):
         return f"Book({self.title}, {self.average_rating:.2f})"
+
 
 obj1 = Book("Harry Potter", [3, 4, 3])
 obj2 = Book("Harry Potter 2", [3, 5, 4])
