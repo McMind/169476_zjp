@@ -6,17 +6,17 @@ class Recipe:
 
     def __mul__(self, other):
         if not isinstance(other, (int, float)):
-            raise NotImplemented
+            return NotImplemented
         return Recipe(self.flour * other, self.sugar * other, self.butter * other)
 
     def __rmul__(self, other):
         if not isinstance(other, (int, float)):
-            raise NotImplemented
+            return NotImplemented
         return Recipe(other * self.flour, other * self.sugar, other * self.butter)
 
     def __truediv__(self, other):
         if not isinstance(other, (int, float)):
-            raise NotImplemented
+            return NotImplemented
         if other == 0:
             raise ZeroDivisionError("Wykryto dzielenie przez 0")
         return Recipe(self.flour / other, self.sugar / other, self.butter / other)

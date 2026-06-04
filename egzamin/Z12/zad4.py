@@ -5,17 +5,17 @@ class ComplexNumber:
 
     def __mul__(self, other):
         if not isinstance(other, (int, float)):
-            raise NotImplementedError
+            return NotImplemented
         return ComplexNumber(self.real * other, self.imag * other)
 
     def __rmul__(self, other):
         if not isinstance(other, (int, float)):
-            raise NotImplementedError
+            return NotImplemented
         return ComplexNumber(other * self.real, other * self.imag)
 
     def __truediv__(self, other):
         if not isinstance(other, (int, float)):
-            raise NotImplementedError
+            return NotImplemented
         if other == 0:
             raise ZeroDivisionError
         return ComplexNumber(self.real / other, self.imag / other)

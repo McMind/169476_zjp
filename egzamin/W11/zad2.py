@@ -15,12 +15,12 @@ class Player:
 
     def __eq__(self, other):
         if not isinstance(other, Player):
-            raise NotImplemented
+            return NotImplemented
         return self.average_score == other.average_score
 
     def __lt__(self, other):
         if not isinstance(other, Player):
-            raise NotImplemented
+            return NotImplemented
         return self.average_score < other.average_score
 
     def __repr__(self):
