@@ -3,8 +3,7 @@ def fibonacci_up_to_n(n):
     while (list1[-1] + list1[-2]) < n:
         list1.append(list1[-1] + list1[-2])
 
-    for element in list1:
-        yield element
+    yield from list1
 
 
 print(list(fibonacci_up_to_n(100)))

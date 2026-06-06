@@ -5,8 +5,7 @@ def digits(n):
         n //= 10
 
     list1 = list(reversed(list1))
-    for element in list1:
-        yield element
+    yield from list1
 
 
 print(list(digits(78652)))

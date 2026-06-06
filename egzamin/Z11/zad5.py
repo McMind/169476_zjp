@@ -18,8 +18,7 @@ def divisors(n: int):
 
     all_divisors = left_divisors + right_divisors[::-1]
 
-    for d in all_divisors:
-        yield d
+    yield from all_divisors
 
 
 print("2. Dzielniki liczby 36:")
@@ -27,11 +26,11 @@ for div in divisors(36):
     print(div, end=" ")
 print("\n")
 
-number_to_check = 17
+NUMBER_TO_CHECK = 17
 
-divisors_list = list(divisors(number_to_check))
+divisors_list = list(divisors(NUMBER_TO_CHECK))
 is_prime = len(divisors_list) == 2
 
-print(f"3. Sprawdzanie liczby {number_to_check}:")
+print(f"3. Sprawdzanie liczby {NUMBER_TO_CHECK}:")
 print(f"Wszystkie dzielniki: {divisors_list}")
-print(f"Czy liczba {number_to_check} jest pierwsza? {is_prime}")
+print(f"Czy liczba {NUMBER_TO_CHECK} jest pierwsza? {is_prime}")

@@ -31,7 +31,7 @@ class Product:
 
     @discount.setter
     def discount(self, value):
-        if not isinstance(value, (int, float)) or not (0 <= value <= 100):
+        if not isinstance(value, (int, float)) or not 0 <= value <= 100:
             raise ValueError("Rabat musi mieścić się w przedziale od 0 do 100.")
         self._discount = float(value)
 
@@ -41,7 +41,8 @@ class Product:
         return round(price_after_discount, 2)
 
     def __str__(self):
-        return f"Produkt: {self.name} | Cena końcowa: {self.final_price:.2f} zł (Rabat: {self.discount}%)"
+        return (f"Produkt: {self.name} | Cena końcowa: {self.final_price:.2f} zł"
+                f" (Rabat: {self.discount}%)")
 
 
 print("=== Test 1: Poprawne działanie ===")
